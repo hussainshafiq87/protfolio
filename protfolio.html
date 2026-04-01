@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shafiq Hussain Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    background: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #f9f9f9;
+}
+
+/* Button */
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Shafiq Hussain</h2>
+</nav>
+
+<section class="hero">
+    <h1>Hi, I'm Shafiq 👋</h1>
+    <p>3rd Year Software Engineering Student</p>
+</section>
+
+<section>
+    <h2>About Me</h2>
+    <p>I am a passionate software engineering student interested in web development and programming.</p>
+</section>
+
+<section>
+    <h2>My Projects</h2>
+
+    <div class="card">
+        <h3>Travel Website</h3>
+        <p>A simple travel site using HTML, CSS, JS.</p>
+        <button onclick="showProject('travel')">View</button>
+    </div>
+
+    <div class="card">
+        <h3>Calculator App</h3>
+        <p>Basic calculator using JavaScript.</p>
+        <button onclick="showProject('calculator')">View</button>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio website.</p>
+        <button onclick="showProject('portfolio')">View</button>
+    </div>
+
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: shafiq@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Shafiq Hussain</p>
+</footer>
+
+<script>
+function showProject(project) {
+    let message = "";
+
+    if (project === "travel") {
+        message = "This is a travel website project made using HTML, CSS, and JavaScript.";
+    } else if (project === "calculator") {
+        message = "This is a simple calculator application using JavaScript.";
+    } else if (project === "portfolio") {
+        message = "This is my personal portfolio website.";
+    }
+
+    alert(message);
+}
+</script>
+
+</body>
+</html>
